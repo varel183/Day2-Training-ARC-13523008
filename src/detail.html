@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="breadcrumb">
+        <a href="index.html" class="return-link">&larr; Back to Catalog</a>
+    </nav>
+    
+    <article class="item-detail">
+        <section class="gallery" style="width: 50%; align-items: center; justify-content: center; display: flex;">
+            <img class="main-image" id="featuredImage" alt="Main product image" style="width: 50%; height: 50%; ">
+        </section>
+        
+        <section class="specs" style="width: 50%; padding-left: 2rem;">
+            <h1 id="itemBrand"></h1>
+            <p class="item-name" id="itemTitle"></p>
+            <p class="description" id="itemDescription"></p>
+            <div class="pricing">
+                <label>Price:</label>
+                <span class="current-price" id="itemPrice"></span>
+            </div>
+            
+            <div class="ratings" style="display: flex; align-items: center; gap: 0.5rem;">
+                <label>Rating:</label>
+                <div class="score" id="ratingValue"></div>
+                <div class="star-display" id="ratingStars"></div>
+                <span class="review-count" id="reviewCount"></span>
+            </div>
+
+            <dl class="tech-specs">
+                <div>
+                    <dt>Category:</dt>
+                    <dd id="itemCategory"></dd>
+                </div>
+                <div>
+                    <dt>Availability:</dt>
+                    <dd id="stockStatus"></dd>
+                </div>
+            </dl>
+        </section>
+    </article>
+
+    <script src="detail.js"></script>
+</body>
+</html>

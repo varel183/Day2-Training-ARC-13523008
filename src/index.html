@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <h2>Product Manager</h2>
+    </header>
+    
+    <section class="controls">
+        <div class="filter-group">
+            <div class="filter">
+                <label for="typeFilter">Filter by Type:</label>
+                <select class="filter-select" id="typeFilter">
+                    <option value="all">All Types</option>
+                </select>
+            </div>
+            <div class="price-range">
+                <label for="lowPrice">Price Range:</label>
+                <div class="price-inputs">
+                    <input type="number" id="lowPrice" placeholder="From">
+                    <input type="number" id="highPrice" placeholder="To">
+                </div>
+            </div>
+            <div class="rating-select">
+                <label for="minRating">Minimum Rating:</label>
+                <select id="minRating">
+                    <option value="0">All Ratings</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+            </div>
+            <button class="filter-btn" id="updateResults">Apply</button>
+        </div>
+    </section>
+
+    <main class="items-container"></main>
+
+    <footer class="page-nav">
+        <button class="nav-btn" id="prevBtn" disabled>&laquo;</button>
+        <span class="current-page" id="pageIndicator">1</span>
+        <button class="nav-btn" id="nextBtn">&raquo;</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
